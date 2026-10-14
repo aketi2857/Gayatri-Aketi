@@ -9,11 +9,33 @@
      STEP 1: Your name and a one-line description.
      Google and link previews (WhatsApp, LinkedIn, X) read these lines.
      ================================================================ -->
-<title>Aketi Gayatri Jahnavi</title>
-<meta name="description" content="Aketi Gayatri Jahnavi, Research Associate in Information Systems at the Indian School of Business, studies how digital platforms shape the ways people trust, interact, and make decisions.">
-<meta property="og:title" content="Aketi Gayatri Jahnavi">
+<title>Aketi Gayatri Jahnavi (Gayatri Aketi) | Research Associate, ISB</title>
+<meta name="description" content="Gayatri Aketi (Aketi Gayatri Jahnavi) is a Research Associate in Information Systems at the Indian School of Business, Hyderabad, studying how digital platforms shape the ways people trust, interact, and make decisions.">
+<link rel="canonical" href="https://aketi2857.github.io/">
+<meta property="og:title" content="Aketi Gayatri Jahnavi (Gayatri Aketi)">
 <meta property="og:description" content="Research Associate in Information Systems at the Indian School of Business, studying how digital platforms shape trust, interaction, and decision-making.">
-<meta property="og:type" content="website">
+<meta property="og:type" content="profile">
+<meta property="og:url" content="https://aketi2857.github.io/">
+<meta property="og:image" content="https://aketi2857.github.io/photo.jpg">
+<meta name="twitter:card" content="summary">
+
+<!-- Tells Google who this page is about, including other ways people write your name -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Aketi Gayatri Jahnavi",
+  "alternateName": ["Gayatri Aketi", "Aketi Gayatri", "Gayatri Jahnavi Aketi", "A. G. Jahnavi"],
+  "url": "https://aketi2857.github.io/",
+  "image": "https://aketi2857.github.io/photo.png",
+  "email": "mailto:Gayatri_Aketi@isb.edu",
+  "jobTitle": "Research Associate",
+  "worksFor": { "@type": "CollegeOrUniversity", "name": "Indian School of Business", "url": "https://www.isb.edu/" },
+  "alumniOf": { "@type": "CollegeOrUniversity", "name": "Christ University" },
+  "knowsAbout": ["Economics of Information Systems", "Online Platforms", "Digital Markets", "Technology Policy", "Digital Asset Markets"],
+  "sameAs": ["https://www.linkedin.com/in/aketi-gayatri-790a20147/"]
+}
+</script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -57,6 +79,8 @@ window.SITE = {
     "I hold an MS in Economics and Analytics from Christ University, Bangalore. Before joining ISB, I was a research intern in the Department of Economics at the National Academy of Agricultural Research Management, where my work on agricultural markets and trade led to [[my first publications|first-publications]]. Here is [[how I got here|timeline]].",
 
     "At Christ, I was a class representative, and I [[started a volunteer teaching program|teaching]] for children and campus workers who had little access to education.",
+
+    "I also write about my fieldwork. In [[my latest blog post|writing]], I look at why most of the Telangana Sona farmers I surveyed in 2023 owned a mobile phone, yet few knew about digital agricultural markets.",
 
     "I keep a list of [[readings behind my research|readings]], from algorithm aversion to homophily, and a few [[lines I keep coming back to|quotes]]."
   ],
@@ -174,6 +198,18 @@ window.SITE = {
         "In 2022, I started and led a volunteer teaching program at Christ University for underprivileged children and for the university's own workers, including custodial staff and drivers. We held daily lessons and mentoring for people who had little access to education.",
         "That same year I was class representative, carrying students' concerns to faculty and helping coordinate academic initiatives."
       ]
+    },
+
+    "writing": {
+      papers: [{
+        title: "How Successful Are Digital Platforms in Rural Areas",
+        url: "blog/digital-platforms-rural-areas.html",
+        venue: "Blog post, October 2026",
+        summary: [
+          "Lessons from my 2023 survey of Telangana Sona farmers in Nidamanuru, Kanagal and Adavidevulapalli mandals. Mobile phone ownership stood at 98.4%, while e-platform awareness reached 25.9%. Farmers' answers pointed to limited awareness, reliance on familiar trading relationships, and concerns about payment and the security of produce."
+        ],
+        links: [{ label: "Read the post", url: "blog/digital-platforms-rural-areas.html" }]
+      }]
     },
 
     "readings": {
@@ -430,7 +466,12 @@ a.tg[aria-expanded="true"] { --c: var(--hl-open); }
 </head>
 <body>
 <div class="desk">
-  <main class="sheet" id="sheet"></main>
+  <main class="sheet" id="sheet">
+    <!-- Plain version for search engines and link previews; replaced as soon as the page loads -->
+    <h1>Aketi Gayatri Jahnavi (Gayatri Aketi)</h1>
+    <p>Research Associate in the Department of Information Systems at the Indian School of Business, Hyderabad, working with Prof. Vasundhara Sharma. I study how digital platforms shape the ways people trust, interact, and make decisions. MS in Economics and Analytics, Christ University, Bangalore.</p>
+    <p><a href="https://www.linkedin.com/in/aketi-gayatri-790a20147/">LinkedIn</a> <a href="cv.pdf">CV (PDF)</a> <a href="blog/digital-platforms-rural-areas.html">Blog: How Successful Are Digital Platforms in Rural Areas</a></p>
+  </main>
 </div>
 <noscript><p style="color:#fff;padding:16px">This site needs JavaScript turned on to show its content.</p></noscript>
 
@@ -563,7 +604,6 @@ a.tg[aria-expanded="true"] { --c: var(--hl-open); }
 
   var sheet = document.getElementById("sheet");
   sheet.innerHTML = h;
-  if (S.name) document.title = S.name;
 
   var img = sheet.querySelector(".pinned img");
   if (img) {
